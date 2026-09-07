@@ -13,9 +13,6 @@ export function Hero() {
 
         <div className="hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow eyebrow-light" aria-hidden="true">
-              01
-            </span>
             <h1>{copy.fold1.heading}</h1>
             <div className="hero-cadence">
               {copy.fold1.cadence.map((item) => (

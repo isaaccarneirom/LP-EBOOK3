@@ -1,5 +1,6 @@
 import { BookReveal } from "./components/BookReveal";
-import { CallToAction } from "./components/CallToAction";
+import { AuthorSection } from "./components/AuthorSection";
+import { FaqSection } from "./components/FaqSection";
 import { Hero } from "./components/Hero";
 import { OfferSection } from "./components/OfferSection";
 import { copy } from "./content";
@@ -16,9 +17,6 @@ export default function Home() {
 
         <section className="section autopilot" aria-labelledby="automatico-title">
           <div className="section-shell autopilot-grid">
-            <div className="section-number" aria-hidden="true">
-              02
-            </div>
             <div className="autopilot-heading">
               <h2 id="automatico-title">{copy.fold2.heading}</h2>
               <div className="cadence" aria-label="Resolver. Trabalhar. Cuidar.">
@@ -38,9 +36,6 @@ export default function Home() {
         <section className="section origin" aria-labelledby="origem-title">
           <div className="section-shell origin-grid">
             <div className="origin-title-wrap">
-              <span className="eyebrow" aria-hidden="true">
-                03
-              </span>
               <h2 id="origem-title">{copy.fold3.heading}</h2>
             </div>
             <div className="prose prose-large origin-body">
@@ -78,9 +73,8 @@ export default function Home() {
               {copy.fold5.heading}
             </p>
             <div className="question-list">
-              {copy.fold5.questions.map((question, index) => (
+              {copy.fold5.questions.map((question) => (
                 <p key={question}>
-                  <span aria-hidden="true">0{index + 1}</span>
                   {question}
                 </p>
               ))}
@@ -111,9 +105,6 @@ export default function Home() {
 
         <section className="section distance" aria-labelledby="distancia-title">
           <div className="section-shell distance-shell">
-            <span className="eyebrow" aria-hidden="true">
-              07
-            </span>
             <h2 id="distancia-title">{copy.fold7.heading}</h2>
             <div className="distance-list">
               {copy.fold7.body.map((paragraph) => (
@@ -127,9 +118,6 @@ export default function Home() {
         <section className="section ordinary" aria-labelledby="mulher-title">
           <div className="section-shell ordinary-grid">
             <div className="ordinary-heading">
-              <span className="eyebrow" aria-hidden="true">
-                08
-              </span>
               <h2 id="mulher-title">{copy.fold8.heading}</h2>
               <p>{copy.fold8.intro}</p>
             </div>
@@ -151,9 +139,6 @@ export default function Home() {
         <section className="section invitation" aria-labelledby="convite-title">
           <div className="section-shell invitation-shell">
             <div className="invitation-heading">
-              <span className="eyebrow" aria-hidden="true">
-                09
-              </span>
               <h2 id="convite-title">{copy.fold9.heading}</h2>
             </div>
             {copy.fold9.themes.length > 0 && (
@@ -174,6 +159,8 @@ export default function Home() {
         <BookReveal />
 
         <OfferSection />
+        <AuthorSection />
+        <FaqSection />
       </main>
     </>
   );

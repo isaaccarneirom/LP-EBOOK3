@@ -10,9 +10,6 @@ export function BookReveal() {
           <BookVisual />
         </div>
         <div className="book-reveal-copy">
-          <span className="eyebrow" aria-hidden="true">
-            10
-          </span>
           <h2 id="livro-title">{copy.fold10.heading}</h2>
           <div className="prose">
             {copy.fold10.body.map((paragraph) => (

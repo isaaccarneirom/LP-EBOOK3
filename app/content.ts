@@ -1,7 +1,9 @@
+const configuredCheckoutUrl = process.env.NEXT_PUBLIC_HOTMART_CHECKOUT_URL?.trim();
+
 export const siteConfig = {
   title: "O Castelo, o Ouro e o Porão",
   author: "Nide Souza",
-  purchaseHref: "#leitura",
+  purchaseHref: configuredCheckoutUrl || "#leitura",
 } as const;
 
 export const copy = {
@@ -154,6 +156,44 @@ export const copy = {
     price: "R$ 29,90",
     cta: "QUERO LER O LIVRO",
     security: "Livro digital • Compra segura",
+  },
+  fold13: {
+    heading: "Ficou alguma dúvida?",
+    questions: [
+      {
+        question: "Para quem é este livro?",
+        answer: [
+          "Para mulheres que gostam de histórias reais e que, em algum momento da vida, já se perguntaram sobre suas escolhas, seus sonhos, sua capacidade ou os caminhos que ainda desejam construir.",
+          "Não é necessário ter vivido as mesmas experiências da autora. O Castelo, o Ouro e o Porão parte de uma história particular para tocar questões humanas que podem atravessar histórias muito diferentes.",
+        ],
+      },
+      {
+        question: "Este é um livro de autoajuda?",
+        answer: [
+          "Não. O Castelo, o Ouro e o Porão é uma história autobiográfica.",
+          "Você não encontrará fórmulas, métodos ou respostas prontas. Encontrará a trajetória real de uma mulher contada a partir do que viveu, sentiu e compreendeu ao revisitar a própria história.",
+        ],
+      },
+      {
+        question: "O livro é digital ou físico?",
+        answer: [
+          "Esta oferta é para a edição digital de O Castelo, o Ouro e o Porão.",
+          "Não há envio de livro físico nesta compra.",
+        ],
+      },
+      {
+        question: "Como vou receber meu livro?",
+        answer: [
+          "Após a confirmação do pagamento, o acesso ao livro digital será disponibilizado pela Hotmart. A compradora receberá as orientações de acesso no e-mail informado durante a compra.",
+        ],
+      },
+      {
+        question: "Onde poderei ler?",
+        answer: [
+          "O livro será disponibilizado em formato EPUB, que pode ser lido em aplicativos e dispositivos compatíveis com esse formato.",
+        ],
+      },
+    ],
   },
   author: {
     eyebrow: "QUEM ESCREVEU ESTA HISTÓRIA",
