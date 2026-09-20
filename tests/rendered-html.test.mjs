@@ -75,8 +75,8 @@ test("renders the complete Portuguese book landing page", async () => {
     assert.match(html, /R\$ 29,90/);
     assert.match(html, /QUERO LER O LIVRO/);
     assert.match(html, /Ficou alguma dúvida\?/);
-    assert.match(html, /Após a confirmação do pagamento, o acesso ao livro digital será disponibilizado pela Hotmart/);
-    assert.match(html, /formato EPUB/);
+    assert.match(html, /a Hotmart libera o acesso ao livro digital/);
+    assert.match(html, /celular, tablet, computador ou em outro dispositivo/);
     assert.doesNotMatch(html, /R\$ \[VALOR\]/);
     assert.doesNotMatch(html, /Acesso após a confirmação da compra/);
     assert.doesNotMatch(html, /Você se acostumou a ser a pessoa que resolve tudo/);

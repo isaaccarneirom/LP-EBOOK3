@@ -184,13 +184,13 @@ export const copy = {
       {
         question: "Como vou receber meu livro?",
         answer: [
-          "Assim que o pagamento for confirmado, a Hotmart libera o acesso ao livro e envia as instruções para o e-mail informado na compra. Você também poderá encontrá-lo na sua conta Hotmart, em “Minhas compras”.",
+          "Após a confirmação do pagamento, a Hotmart libera o acesso ao livro digital e envia as instruções para o e-mail informado na compra. O conteúdo também fica disponível na área “Minhas compras” da conta Hotmart vinculada a esse e-mail.",
         ],
       },
       {
         question: "Onde poderei ler?",
         answer: [
-          "O livro é entregue em formato EPUB. Depois de baixar o arquivo, você poderá lê-lo no celular, tablet, computador ou em outro dispositivo usando um aplicativo compatível com EPUB.",
+          "O livro é entregue em formato EPUB e pode ser lido em celular, tablet, computador ou em outro dispositivo, usando um aplicativo compatível com EPUB.",
         ],
       },
     ],
