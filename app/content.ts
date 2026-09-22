@@ -3,7 +3,7 @@ const configuredCheckoutUrl = process.env.NEXT_PUBLIC_HOTMART_CHECKOUT_URL?.trim
 export const siteConfig = {
   title: "O Castelo, o Ouro e o Porão",
   author: "Nide Souza",
-  purchaseHref: configuredCheckoutUrl || "#leitura",
+  purchaseHref: configuredCheckoutUrl || "https://pay.hotmart.com/K107437086I",
 } as const;
 
 export const copy = {

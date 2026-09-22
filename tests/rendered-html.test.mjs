@@ -74,6 +74,7 @@ test("renders the complete Portuguese book landing page", async () => {
     assert.match(html, /A história completa de uma mulher comum que começou a escrever/);
     assert.match(html, /R\$ 29,90/);
     assert.match(html, /QUERO LER O LIVRO/);
+    assert.match(html, /href="https:\/\/pay\.hotmart\.com\/K107437086I"/);
     assert.match(html, /Ficou alguma dúvida\?/);
     assert.match(html, /a Hotmart libera o acesso ao livro digital/);
     assert.match(html, /celular, tablet, computador ou em outro dispositivo/);

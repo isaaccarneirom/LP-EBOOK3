@@ -993,6 +993,10 @@ summary:focus-visible {
     margin-left: auto;
   }
 
+  .distance-list {
+    grid-template-columns: 1fr;
+  }
+
   .offer-product {
     grid-template-columns: 0.7fr 1fr;
   }
@@ -1015,7 +1019,7 @@ summary:focus-visible {
   }
 
   .section-shell {
-    padding-block: 5.5rem;
+    padding-block: clamp(4rem, 14vw, 5rem);
   }
 
   .hero-masthead p:last-child {
