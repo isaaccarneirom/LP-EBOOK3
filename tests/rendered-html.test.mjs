@@ -75,6 +75,10 @@ test("renders the complete Portuguese book landing page", async () => {
     assert.match(html, /R\$ 29,90/);
     assert.match(html, /QUERO LER O LIVRO/);
     assert.match(html, /href="https:\/\/pay\.hotmart\.com\/K107437086I"/);
+    assert.match(html, /connect\.facebook\.net\/en_US\/fbevents\.js/);
+    assert.match(html, /1624319002380414/);
+    assert.match(html, /facebook\.com\/tr\?id=1624319002380414(?:&|&amp;)ev=PageView/);
+    assert.ok(html.indexOf("1624319002380414") < html.indexOf("</head>"));
     assert.match(html, /Ficou alguma dúvida\?/);
     assert.match(html, /a Hotmart libera o acesso ao livro digital/);
     assert.match(html, /celular, tablet, computador ou em outro dispositivo/);
